@@ -1,8 +1,9 @@
 import React from "react";
 
 const cardClassName = `
-  flex flex-col w-3/5 rounded-lg
-  text-center shadow-lg dark:bg-neutral-700
+  flex flex-col w-4/5 rounded-lg
+  text-center shadow-lg
+  dark:bg-neutral-700
   m-4 p-4
 `;
 
@@ -18,7 +19,7 @@ const labelClassName = `
 `;
 
 const buttonClassName = `
-  min-w-[8rem] max-w-[20rem] w-full
+  min-w-[8rem] max-w-[30rem] w-full
   rounded border-2 border-primary px-2 py-2
   text-xs font-medium uppercase leading-normal
   text-primary hover:border-primary-600
