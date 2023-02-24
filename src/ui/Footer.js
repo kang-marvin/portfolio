@@ -1,13 +1,7 @@
 import React from 'react';
 
 import { FooterData } from '../data';
-
-const buttonClassName = `
-  rounded px-4 p-2 text-xs
-  font-medium uppercase leading-normal
-  text-primary bg-neutral-100
-  hover:bg-neutral-300
-`;
+import { linkClasses } from '../styles';
 
 const LinkWrapper = (props) => {
   const { name, link } = props;
@@ -21,7 +15,7 @@ const LinkWrapper = (props) => {
     >
       <button
         type="button"
-        className={buttonClassName}
+        className={linkClasses.button}
       >
         {name}
       </button>

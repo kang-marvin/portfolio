@@ -1,13 +1,7 @@
 import React from 'react';
 
 import { HeaderData } from '../data';
-
-const buttonClassName = `
-  rounded px-4 p-2 text-xs
-  font-medium uppercase leading-normal
-  text-primary bg-neutral-100
-  hover:bg-neutral-300 min-w-[7rem]
-`;
+import { linkClasses } from '../styles';
 
 const LinkWrapper = (props) => {
   const { name, link, className } = props;
@@ -21,7 +15,7 @@ const LinkWrapper = (props) => {
     >
       <button
         type="button"
-        className={`${buttonClassName} ${className}`}
+        className={`${linkClasses.button} ${className}`}
       >
         {name}
       </button>
@@ -50,7 +44,7 @@ const Header = (props) => {
         return (
           <button
             type="button"
-            class={buttonClassName}
+            class={linkClasses.button}
             onClick={() => setPage(title)}
           >
             {title}

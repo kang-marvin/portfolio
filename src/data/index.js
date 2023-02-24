@@ -1,3 +1,5 @@
+import { linkClasses } from "../styles";
+
 const IntroductionData = {
   full_name: "Marvin Kang'ethe",
   description: "I'm a Software Engineer based in Nairobi, Kenya."
@@ -147,7 +149,7 @@ const HeaderData = {
     {
       name: "Resume",
       link: "https://github.com/kang-marvin/resume/blob/master/Marvin%20Kang'ethe%20Resume.pdf",
-      className: "outline outline-offset-2 outline-blue-400/50 text-blue-500"
+      className: `outline ${linkClasses.a}`,
     },
   ]
 }

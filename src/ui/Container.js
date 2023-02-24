@@ -1,14 +1,13 @@
 import React from 'react';
-
-const mainColor = `bg-black`;
+import { containerClasses, colorClasses } from '../styles';
 
 const Container = (props) => {
   const { children } = props;
   return (
-    <div className='flex justify-center w-screen h-[90%] items-center'>
-      <div className={`${mainColor} w-4/5 h-[98%] border rounded-lg min-w-[10rem]`}>
+    <div class={containerClasses.div}>
+      <main class={`${colorClasses.backgroundColor} ${containerClasses.main}`}>
         {children}
-      </div>
+      </main>
     </div>
   );
 };

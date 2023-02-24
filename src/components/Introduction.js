@@ -1,8 +1,7 @@
 import React from 'react';
 
 import { IntroductionData } from "./../data";
-
-const mainColor = `text-orange-400 `;
+import { colorClasses } from '../styles';
 
 const GreetingsClassName = `
   text-6xl font-bold mb-5
@@ -24,7 +23,7 @@ const Introduction = () => {
       <h1 className={GreetingsClassName}>Hello! &#128075;</h1>
       {/* Introductory */}
       <p className={IntroductoryClassName}>
-        I'm <span className={`${userNameClassName} ${mainColor}`}>{IntroductionData.full_name}</span>
+        I'm <span className={`${userNameClassName} ${colorClasses.textColor}`}>{IntroductionData.full_name}</span>
       </p>
       {/* Brief Description */}
       <span className='text-white text-lg'>
