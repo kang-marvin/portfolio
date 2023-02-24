@@ -1,15 +1,9 @@
 import React, { useState } from 'react';
 
+import { Container, FlexBoard, Footer, Header } from "./ui";
+import { Introduction, Experience, Portfolio } from "./components";
+
 import "./index.css";
-
-import Introduction from './components/Introduction';
-import Experience from './components/Experience';
-import Portfolio from './components/Portfolio';
-
-import Container from './ui/Container';
-import FlexBoard from './ui/FlexBoard';
-import Footer from './ui/Footer';
-import Header from './ui/Header';
 
 const Pages = {
   portfolio: <Portfolio />,
