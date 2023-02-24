@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { IntroductionData } from "./../data";
+
 const mainColor = `text-orange-400 `;
 
 const GreetingsClassName = `
@@ -22,11 +24,11 @@ const Introduction = () => {
       <h1 className={GreetingsClassName}>Hello! &#128075;</h1>
       {/* Introductory */}
       <p className={IntroductoryClassName}>
-        I'm <span className={`${userNameClassName} ${mainColor}`}>Marvin Kang'ethe</span>
+        I'm <span className={`${userNameClassName} ${mainColor}`}>{IntroductionData.full_name}</span>
       </p>
       {/* Brief Description */}
       <span className='text-white text-lg'>
-        I'm a Software Engineer based in Nairobi, Kenya.
+        {IntroductionData.description}
       </span>
     </>
   );

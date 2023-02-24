@@ -1,5 +1,7 @@
 import React from "react";
 
+import { PortfolioData } from "../data";
+
 const cardClassName = `
   flex flex-col w-4/5 rounded-lg
   text-center shadow-lg
@@ -26,93 +28,6 @@ const buttonClassName = `
   hover:bg-neutral-500 hover:bg-opacity-10
   hover:text-primary-600
 `;
-
-const ProjectType = {
-  client: "Client Work",
-  personal: "Personal Project",
-};
-
-const data = [
-  {
-    type: "client",
-    title: "RelishCareers",
-    tools: [
-      "rails", "react", "semantic-ui",
-      "redux", "postgres", "sidekiq", "BitBucket"
-    ],
-    about: `
-      RelishCareers is the online careers marketplace for
-      hiring graduate-level job candidates, ranging from MBAs
-      to Engineers or Data Scientists.
-    `,
-    links: [
-      {
-        name: "Website",
-        url: "https://www.relishcareers.com",
-      },
-    ],
-  },
-  {
-    type: "personal",
-    title: "Matching Game",
-    tools: [
-      "rails", "tailwind", "stimulus-js"
-    ],
-    about: `
-      A memory game for matching tiles that have the
-      same color and animal as fast as possible.
-    `,
-    links: [
-      {
-        name: "Code on Github",
-        url: "https://github.com/kang-marvin/matching-game",
-      },
-      {
-        name: "Deployed to Fly.io",
-        url: "https://matching-animal-color-game.fly.dev",
-      },
-    ],
-  },
-  {
-    type: "personal",
-    title: "Question Answer Platform",
-    tools: [
-      "rails", "tailwind", "react", "postgres"
-    ],
-    about: `
-      A question-answer platform inspired by
-      PluralSight assessment page. The project
-      uses fake data
-    `,
-    links: [
-      {
-        name: "Code on Github",
-        url: "https://github.com/kang-marvin/question-answer",
-      },
-      {
-        name: "Deployed to Railway.app",
-        url: "https://question-answer-production.up.railway.app",
-      },
-    ],
-  },
-  {
-    type: "personal",
-    title: "AmberScript Job Availability Bot",
-    tools: [
-      "ruby", "selenium-webdriver", "shell"
-    ],
-    about: `
-      A bot that checks if jobs are available on
-      AmberScript.com for transcribers
-    `,
-    links: [
-      {
-        name: "Code on Github",
-        url: "https://github.com/kang-marvin/transcriber-job-availability-bot",
-      },
-    ],
-  },
-];
 
 const PerProject = (props) => {
   const { project } = props;
@@ -160,7 +75,7 @@ const PerProject = (props) => {
     <div className={cardClassName}>
       <div className="">
         <h5 className={cardHeaderClassName}>
-          {project.title} - {ProjectType[project.type]}
+          {project.title} - {PortfolioData.project_types[project.type]}
         </h5>
 
         <p className="
@@ -181,7 +96,7 @@ const PerProject = (props) => {
 const Portfolio = () => {
   return (
     <div className="grid h-full w-full place-items-center overflow-auto content-center">
-      {data.map((project) => {
+      {PortfolioData.work.map((project) => {
         return <PerProject project={project} />;
       })}
     </div>

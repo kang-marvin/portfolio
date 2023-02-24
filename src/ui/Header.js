@@ -1,12 +1,6 @@
 import React from 'react';
 
-const data = [
-  {
-    name: "Resume",
-    link: "https://github.com/kang-marvin/resume/blob/master/Marvin%20Kang'ethe%20Resume.pdf",
-    className: "outline outline-offset-2 outline-blue-400/50 text-blue-500"
-  },
-];
+import { HeaderData } from '../data';
 
 const buttonClassName = `
   rounded px-4 p-2 text-xs
@@ -40,7 +34,7 @@ const Header = (props) => {
 
   return (
     <div className="flex flex-row-reverse py-4 px-8 space-x-2">
-      {data.map((media) => {
+      {HeaderData.links.map((media) => {
         return (
           <LinkWrapper
             name={media.name}
