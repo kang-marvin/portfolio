@@ -25,7 +25,7 @@ const LinkWrapper = (props) => {
 
 const Footer = () => {
   return (
-    <div className="flex justify-center py-4 space-x-2">
+    <div className="flex sm:flex-row flex-col gap-2 justify-center py-4">
       {FooterData.links.map((media) => {
         return (
           <LinkWrapper

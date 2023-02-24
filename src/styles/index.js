@@ -16,16 +16,33 @@ const colorClasses = {
 }
 
 const containerClasses = {
-  div: "flex justify-center w-screen min-h-[90%] items-center",
-  main: "w-5/6 h-[98%] rounded-lg min-w-[10rem] border-orange-50"
+  div: "flex justify-center w-screen min-h-[85%] items-center",
+  main: "w-5/6 h-full rounded-lg min-w-[10rem] border-orange-50"
 }
 
 const linkClasses = {
-  button: `rounded px-4 p-2 text-xs
+  button: `
+    w-full
+    min-w-[8rem]
+
+    max-w-full
+    bg-black
+    text-slate-50
+    border-2
+    border-slate-50
+
+    sm:bg-white
+    sm:text-black
+    sm:max-w-[30rem]
+    sm:rounded
+
+    hover:border-orange-200
+
+    px-4 p-2 text-xs
     font-medium uppercase leading-normal
-    text-primary bg-neutral-100
-    hover:bg-neutral-300 min-w-[7rem]
+    text-primary
   `,
+
   a: `
     outline outline-offset-2
     ${colorClasses.outline}
