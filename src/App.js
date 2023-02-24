@@ -8,16 +8,20 @@ import "./index.css";
 
 import Container from './ui/Container';
 import FlexBoard from './ui/FlexBoard';
+import Footer from './ui/Footer';
 
 const App = () => {
   return (
-    <Container>
-      <FlexBoard className="items-start justify-center">
-        {/* <Introduction /> */}
-        {/* <Experience /> */}
-        {/* <Portfolio /> */}
-      </FlexBoard>
-    </Container>
+    <>
+      <Container>
+        <FlexBoard className="items-start justify-center">
+          {/* <Introduction /> */}
+          {/* <Experience /> */}
+          {/* <Portfolio /> */}
+        </FlexBoard>
+      </Container>
+      <Footer />
+    </>
   )
 }
 
