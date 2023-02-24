@@ -1,7 +1,7 @@
 import React from 'react';
 
 const sharedClassName = `
-  flex flex-col p-4 h-full
+  flex flex-col p-4 h-fit
   text-white
 `;
 

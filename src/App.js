@@ -15,18 +15,20 @@ const App = () => {
 
   const [page, setPage] = useState("about");
   return (
-    <>
-      <Header
-        setPage={setPage}
-        pagesTitle={Object.keys(Pages)}
-      />
-      <Container>
-        <FlexBoard className="items-start justify-center">
-          {Pages[page]}
-        </FlexBoard>
-      </Container>
-      <Footer />
-    </>
+    <div class="flex w-screen h-screen">
+      <div class="m-auto h-full min-w-[10rem] w-fit max-w-[60rem] border border-orange-300 rounded-xl">
+        <Header
+          setPage={setPage}
+          pagesTitle={Object.keys(Pages)}
+        />
+        <Container>
+          <FlexBoard className="items-start justify-center">
+            {Pages[page]}
+          </FlexBoard>
+        </Container>
+        <Footer />
+      </div>
+    </div>
   )
 }
 
