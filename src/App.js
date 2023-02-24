@@ -6,9 +6,9 @@ import { Introduction, Experience, Portfolio } from "./components";
 import "./index.css";
 
 const Pages = {
-  portfolio: <Portfolio />,
-  experience: <Experience />,
   about: <Introduction />,
+  experience: <Experience />,
+  portfolio: <Portfolio />,
 };
 
 const App = () => {
