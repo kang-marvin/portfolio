@@ -36,12 +36,10 @@ const LinkWrapper = (props) => {
 }
 
 const Header = (props) => {
-  const { children } = props;
+  const { pagesTitle, setPage } = props;
 
   return (
     <div className="flex flex-row-reverse py-4 px-8 space-x-2">
-      {children}
-
       {data.map((media) => {
         return (
           <LinkWrapper
@@ -49,6 +47,20 @@ const Header = (props) => {
             link={media.link}
             className={media.className}
           />
+        )
+      })}
+
+      <span className='px-1'></span>
+
+      {pagesTitle.map((title) => {
+        return (
+          <button
+            type="button"
+            class={buttonClassName}
+            onClick={() => setPage(title)}
+          >
+            {title}
+          </button>
         )
       })}
     </div>
