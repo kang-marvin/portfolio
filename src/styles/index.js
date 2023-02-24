@@ -16,7 +16,7 @@ const colorClasses = {
 }
 
 const containerClasses = {
-  div: "flex justify-center w-full min-h-[85%] items-center",
+  div: "flex justify-center w-full min-h-[89%] items-center",
   main: "w-5/6 h-full rounded-lg min-w-[10rem] border-orange-50"
 }
 
