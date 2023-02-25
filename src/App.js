@@ -16,7 +16,7 @@ const App = () => {
   const [page, setPage] = useState("about");
   return (
     <div class="grid h-screen place-items-center">
-      <div class="h-full min-w-[10rem] w-fit max-w-[60rem] border border-orange-300 rounded-xl">
+      <div class="h-full min-w-[10rem] w-fit max-w-[60rem] border border-orange-300 rounded-xl m-4">
         <Header
           setPage={setPage}
           pagesTitle={Object.keys(Pages)}

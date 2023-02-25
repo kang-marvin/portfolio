@@ -15,7 +15,7 @@ const LinkWrapper = (props) => {
     >
       <button
         type="button"
-        className={linkClasses.button}
+        className={`${linkClasses.button}`}
       >
         {name}
       </button>
@@ -25,7 +25,7 @@ const LinkWrapper = (props) => {
 
 const Footer = () => {
   return (
-    <div className="flex sm:flex-row flex-col gap-2 justify-center py-4">
+    <div className="flex sm:flex-row flex-col gap-2 justify-center px-4">
       {FooterData.links.map((media) => {
         return (
           <LinkWrapper

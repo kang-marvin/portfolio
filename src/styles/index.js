@@ -16,7 +16,7 @@ const colorClasses = {
 }
 
 const containerClasses = {
-  div: "flex justify-center w-full min-h-[89%] items-center",
+  div: "flex justify-center w-full min-h-[80%] items-center",
   main: "w-5/6 h-full rounded-lg min-w-[10rem] border-orange-50"
 }
 
@@ -52,10 +52,10 @@ const linkClasses = {
 
 const cardClasses = {
   card: `
-    flex flex-col w-4/5 rounded-lg
+    flex flex-col w-full rounded-lg
     text-center shadow-lg
     dark:bg-neutral-700
-    m-4 p-4
+    m-4 p-2
   `,
   header: `
     mb-2 text-xl font-medium ${helpers.lightText}
