@@ -1,5 +1,5 @@
-import React from 'react';
-import { containerClasses, colorClasses } from '../styles';
+import React from "react";
+import { containerClasses, colorClasses } from "../styles";
 
 const Container = (props) => {
   const { children } = props;

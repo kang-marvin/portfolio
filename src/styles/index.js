@@ -1,7 +1,7 @@
 const helpers = {
   heavyText: "text-neutral-600 dark:text-neutral-200",
   lightText: "text-neutral-800 dark:text-neutral-50",
-}
+};
 
 const colorClasses = {
   textColor: "text-orange-400",
@@ -12,13 +12,13 @@ const colorClasses = {
   `,
   outline: `
     outline-blue-400/50
-  `
-}
+  `,
+};
 
 const containerClasses = {
   div: "flex justify-center w-full min-h-[80%] items-center",
-  main: "w-5/6 h-full rounded-lg min-w-[10rem] border-orange-50"
-}
+  main: "w-5/6 h-full rounded-lg min-w-[10rem] border-orange-50",
+};
 
 const linkClasses = {
   button: `
@@ -47,8 +47,8 @@ const linkClasses = {
     outline outline-offset-2
     ${colorClasses.outline}
     ${colorClasses.linkColor}
-  `
-}
+  `,
+};
 
 const cardClasses = {
   card: `
@@ -71,8 +71,8 @@ const cardClasses = {
     text-primary hover:border-primary-600
     hover:bg-neutral-500 hover:bg-opacity-10
     hover:text-primary-600
-  `
-}
+  `,
+};
 
 const stepClasses = {
   list: `
@@ -97,7 +97,13 @@ const stepClasses = {
   `,
 
   date: "dark:text-neutral-300",
-  description: "pr-6 pb-6 pl-[4rem]"
-}
+  description: "pr-6 pb-6 pl-[4rem]",
+};
 
-export { colorClasses, containerClasses, linkClasses, cardClasses, stepClasses }
+export {
+  colorClasses,
+  containerClasses,
+  linkClasses,
+  cardClasses,
+  stepClasses,
+};

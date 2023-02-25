@@ -3,7 +3,7 @@ import React from "react";
 import { ExperienceData } from "../data";
 import { stepClasses } from "../styles";
 
-const PerExperience = props => {
+const PerExperience = (props) => {
   const { exp } = props;
 
   return (
@@ -17,20 +17,20 @@ const PerExperience = props => {
       </div>
       {/* Description */}
       <div className={stepClasses.description}>
-        <p className="font-bold text-2xl">{exp.role} - {exp.companyName}</p>
+        <p className="font-bold text-2xl">
+          {exp.role} - {exp.companyName}
+        </p>
         <span>{exp.description}</span>
       </div>
     </li>
-  )
-}
+  );
+};
 
 const Experience = () => {
   return (
     <ul className="overflow-auto">
       {ExperienceData.experiences.map((experience) => {
-        return (
-          <PerExperience exp={experience} />
-        )
+        return <PerExperience exp={experience} />;
       })}
     </ul>
   );

@@ -20,7 +20,9 @@ const PerProject = (props) => {
             <a href={link.url} target="_blank" rel="noreferrer">
               <button className={cardClasses.button}>
                 {link.name}{" "}
-                <i class={`bi bi-box-arrow-in-up-right ${colorClasses.linkColor}`}></i>
+                <i
+                  class={`bi bi-box-arrow-in-up-right ${colorClasses.linkColor}`}
+                ></i>
               </button>
             </a>
           );
@@ -52,9 +54,7 @@ const PerProject = (props) => {
           {project.title} - {PortfolioData.project_types[project.type]}
         </h5>
 
-        <p className={colorClasses.infoParagraph}>
-          {project.about}
-        </p>
+        <p className={colorClasses.infoParagraph}>{project.about}</p>
 
         <Tools data={project.tools} />
 

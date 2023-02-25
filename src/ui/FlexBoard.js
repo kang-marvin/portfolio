@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const sharedClassName = `
   flex flex-col p-4 h-fit
@@ -6,12 +6,8 @@ const sharedClassName = `
 `;
 
 const FlexBoard = (props) => {
-  const {children, className} = props;
-  return (
-    <div className={`${sharedClassName} ${className}`}>
-      {children}
-    </div>
-  );
+  const { children, className } = props;
+  return <div className={`${sharedClassName} ${className}`}>{children}</div>;
 };
 
 export default FlexBoard;
