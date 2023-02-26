@@ -157,10 +157,6 @@ const FooterData = {
       link: "https://www.linkedin.com/in/kang-marvin",
     },
     {
-      name: "Email",
-      link: "mailto:marvinjameskang@gmail.com",
-    },
-    {
       name: "Twitter",
       link: "https://twitter.com/kang_marvin",
     },
