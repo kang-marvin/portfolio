@@ -75,6 +75,26 @@ const PortfolioData = {
     },
     {
       type: "personal",
+      title: "Multi Field Search using Stimulus",
+      tools: ["stimulus", "tailwind", "rails", "postgres"],
+      about: `
+        Project about how best to search multiple fields of a table using stimulus.
+        Example. A table with 10 fields but only 3 of them are searchable
+        and the fields are not next to each other.
+      `,
+      links: [
+        {
+          name: "Code on Github",
+          url: "https://github.com/kang-marvin/multi-field-search-with-stimulus",
+        },
+        {
+          name: "README with the Problem & Solution explained",
+          url: "https://github.com/kang-marvin/multi-field-search-with-stimulus/blob/main/README.md",
+        },
+      ],
+    },
+    {
+      type: "personal",
       title: "AmberScript Job Availability Bot",
       tools: ["ruby", "selenium-webdriver", "shell"],
       about: `
