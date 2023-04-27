@@ -36,13 +36,17 @@ const PortfolioData = {
     },
     {
       type: "personal",
-      title: "Matching Game",
+      title: "Memory Game",
       tools: ["rails", "tailwind", "stimulus-js"],
       about: `
         A memory game for matching tiles that have the
         same color and animal as fast as possible.
       `,
       links: [
+        {
+          name: "Article Published",
+          url: "https://semaphoreci.com/blog/memory-game-rails-stimulusjs-tailwindcss",
+        },
         {
           name: "Code on Github",
           url: "https://github.com/kang-marvin/matching-game",
